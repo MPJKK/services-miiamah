@@ -17,7 +17,7 @@ export class RoutesComponent implements OnInit {
     ngOnInit() {
         this.digitransitService.getRoutes(this.pysakki).subscribe(response => {
             this.kaikkiData = response;
-            console.log(this.kaikkiData.data['stops']);
+            this.kaikkiData.data['stops'];
         });
     }
 

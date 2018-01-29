@@ -5,7 +5,7 @@
     </h2>
 
     <ul>
-        <li *ngFor="">
-            {{ kaikkiData.name }}, {{ shortName }}, {{ longName }}
+        <li *ngFor="let reitti of reittiTaulukko">
+            {{ reitti.name }}, {{ reitti.route.longName }}
         </li>
     </ul>
